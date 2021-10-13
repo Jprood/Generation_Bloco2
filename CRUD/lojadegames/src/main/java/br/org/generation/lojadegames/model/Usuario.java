@@ -40,6 +40,16 @@ public class Usuario {
 	@JsonIgnoreProperties("usuario")
 	private List<Produto> produto;
 
+	public Usuario(Long id, String nome, String usuario, String senha) {
+
+		this.id = id;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+	}
+
+	public Usuario() { }
+
 	public Long getId() {
 		return id;
 	}

@@ -32,7 +32,7 @@ public class UsuarioService {
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 		String senhaEncoder = encoder.encode(usuario.getSenha());
 		usuario.setSenha(senhaEncoder);
-		
+
 		return Optional.of(usuarioRepository.save(usuario));
 	}
 

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import br.org.generation.lojadegames.model.Usuario;
 import br.org.generation.lojadegames.repository.UsuarioRepository;
 
+
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
